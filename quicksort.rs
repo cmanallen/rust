@@ -16,7 +16,7 @@ fn partition(array: &mut[isize], first: usize, last: usize) -> usize {
     let mut i: isize = i - 1;
 
     let mut j = first;
-    while j < last - 1 {
+    while j <= last - 1 {
         if array[j] < pivot {
             i = i + 1;
             let k: usize = i as usize;
@@ -42,8 +42,8 @@ fn swap(array: &mut[isize], a: usize, b: usize) {
 
 
 fn main() {
-    let mut array = [3, 5, 1, 4, 2];
-    quicksort(&mut array, 0, 4);
+    let mut array = [3, 5, 1, 4, 2, 6, 9, 8, 7];
+    quicksort(&mut array, 0, 8);
 
     println!("{:?}", array);
 }
