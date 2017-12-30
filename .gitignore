@@ -1,3 +1,9 @@
 *
+!*/
 !*.*
+
+html_counter/target/*
+Cargo.toml~
+Cargo.lock
 .DS_Store
+yew

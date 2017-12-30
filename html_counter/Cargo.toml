@@ -1,0 +1,7 @@
+[package]
+name = "counter"
+version = "0.0.1"
+authors = ["Colton Allen"]
+
+[dependencies]
+yew = { path = "../yew" }
